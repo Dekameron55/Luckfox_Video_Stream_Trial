@@ -32,7 +32,7 @@ The project directory contains the following key files:
 
 ## 3. Hardware and Setup
 
-![Hardware Setup](images/setup_3.jpg)
+![Hardware Setup](images/setup_2.jpg)
 
 
 This project involves two main hardware components connected over an Ethernet network.
