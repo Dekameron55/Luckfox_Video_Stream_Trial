@@ -1,4 +1,4 @@
-# Luckfox Pico Jpeg Stream Trial
+# Luckfox Pico Video Stream Trial
 
 A trial jpeg stream application for Linux running in user space, leveraging the hardware jpeg encoder present in the Rockchip RV1106G3 device. This project captures frames from a CSI camera, encodes them into MJPEG format, and streams them over a TCP network connection to a display device.
 
@@ -41,7 +41,7 @@ This project involves two main hardware components connected over an Ethernet ne
 
 1.  **Luckfox Pico Pro Max**: The streaming device, featuring the Rockchip RV1106G3 SoC with integrated ISP and video encoders.
     -   **IP Address (Static)**: `192.168.100.50`
-2.  **Camera**: A MIPI CSI 2-lane camera module (e.g., MISS001 5MP) connected to the CSI connector on the Luckfox board.
+2.  **Camera MISS001 5MP**: A MIPI CSI 2-lane camera module connected to the CSI connector on the Luckfox board.
 3.  **STM32H735-DK (Discovery Kit)**: The receiving device. It runs a TCP server application that listens for incoming JPEG frames and displays them on its 480x272 LCD.
     -   **IP Address (Static)**: `192.168.100.10`
     -   *Note: The firmware for the STM32 board is maintained in a separate repository.*
