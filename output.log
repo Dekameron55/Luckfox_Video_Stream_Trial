@@ -1,0 +1,56 @@
+(null)           12:16:05-397 {read_log_level    :098} text is all=4
+(null)           12:16:05-397 {read_log_level    :100} module is all, log_level is 4
+RKViDev          12:16:05-401 {vi_set_dev_attr   :612} VI_DEV_ATTR_S all parameter reserved
+(null)           12:16:05-402 {monitor_log_level :149} #Start monitor_log_level thread, arg:(nil)
+RTIsp3x          12:16:05-404 {ispInitDevice     :591} sensor name = m00_b_mis5001 4-0031
+RTDeviceSensorV4 12:16:05-407 {ispOpenDevice     :502} v4l2_open(/dev/video0), handler=45
+RTDeviceSensorV4 12:16:05-407 {ispOpenDevice     :502} v4l2_open(/dev/v4l-subdev2), handler=47
+RTDeviceSensorV4 12:16:05-408 {close             :112} do RTDeviceSensorV4L2 close
+RTDeviceSensorV4 12:16:05-408 {close             :112} do RTDeviceSensorV4L2 close
+RKViChn          12:16:05-409 {prepareRuntime    :354} ---------------------------------------------------------
+RKViChn          12:16:05-410 {prepareRuntime    :356} vi version: 1.22, name:vvi
+RKViChn          12:16:05-410 {prepareRuntime    :357} rockit-ko version: vmpi:28ee389dbc33
+RKViChn          12:16:05-410 {prepareRuntime    :358} rockit-ko building: -2024-05-24-18:15:06
+RKViChn          12:16:05-410 {prepareRuntime    :359} ---------------------------------------------------------
+cmpi             12:16:05-411 {prepareRuntime    :378} mb pool create success, MBCnt= 3
+RTIsp3x          12:16:05-413 {ispInitDevice     :591} sensor name = m00_b_mis5001 4-0031
+cmpi             12:16:05-415 {createRuntime     :634} >>>>>>>>> Sensor link info dump: <<<<<<<<<
+cmpi             12:16:05-416 {createRuntime     :636}   vicap media name           : /dev/media0
+cmpi             12:16:05-416 {createRuntime     :637}   vicap model name           : rkcif-mipi-lvds
+cmpi             12:16:05-416 {createRuntime     :638}   camera id                  : 0
+cmpi             12:16:05-416 {createRuntime     :639}   sensor name                : m00_b_mis5001 4-0031
+cmpi             12:16:05-416 {createRuntime     :641}   stream_cif_mipi_id0 video name: /dev/video0
+cmpi             12:16:05-417 {createRuntime     :642}   stream_cif_mipi_id1 video name: /dev/video1
+cmpi             12:16:05-417 {createRuntime     :643}   stream_cif_mipi_id2 video name: /dev/video2
+cmpi             12:16:05-417 {createRuntime     :644}   stream_cif_mipi_id3 video name: /dev/video3
+cmpi             12:16:05-417 {createRuntime     :646}   sensor raw width           : 2592
+cmpi             12:16:05-417 {createRuntime     :647}   sensor raw height          : 1944
+cmpi             12:16:05-417 {createRuntime     :648} ---------------------------------------------------------
+cmpi             12:16:05-417 {createRuntime     :654}   isp media name           : /dev/media1
+cmpi             12:16:05-418 {createRuntime     :655}   isp model name           : rkisp0
+cmpi             12:16:05-418 {createRuntime     :656}   isp driver name          : rkisp-vir0
+cmpi             12:16:05-418 {createRuntime     :657}   isp dev name             : /dev/v4l-subdev3
+cmpi             12:16:05-418 {createRuntime     :659}   isp rawrd0_m_path        : /dev/video17
+cmpi             12:16:05-418 {createRuntime     :660}   isp rawrd1_l_path        : 
+cmpi             12:16:05-418 {createRuntime     :661}   isp rawrd2_s_path        : /dev/video18
+cmpi             12:16:05-418 {createRuntime     :664}   mainpath video name      : /dev/video11
+cmpi             12:16:05-419 {createRuntime     :665}   selfpath video name      : /dev/video12
+cmpi             12:16:05-419 {createRuntime     :666}   bypasspath video name    : /dev/video13
+cmpi             12:16:05-419 {createRuntime     :667}   sensor link type         : 2
+cmpi             12:16:05-419 {createRuntime     :668}   sensor is united         : 0
+cmpi             12:16:05-419 {createRuntime     :672} ---------------------------------------------------------
+cmpi             12:16:05-419 {createRuntime     :711} [non-WRAP MODE]: buff size = 195840
+RTIsp3x          12:16:05-422 {ispInitDevice     :591} sensor name = m00_b_mis5001 4-0031
+RTDeviceV4L2     12:16:05-424 {open              :137} cameraIndex:0, entityName:rkisp_mainpath
+RTDeviceV4L2     12:16:05-425 {open              :143} open video name(/dev/video11)
+RKViChn          12:16:05-425 {setFrameRate      :1469} [vi] dev(0) ch(0) illegal param s32SrcFrameRate(0) s32DstFrameRate(0)
+RTDeviceV4L2     12:16:05-426 {ispCameraInfo     :567} current device:/dev/video11 isn't compatible(cap:0x84201000) device,memoryType:4, retry:0
+RTDeviceV4L2     12:16:05-426 {ispInitFormat     :767} ioctl VIDIOC_S_FMT OK
+cmpi             12:16:05-427 {start             :1093} =========== vi Start startRuntime ===========
+RTDeviceV4L2     12:16:05-427 {ispStreamOn       :458} do ispStreamOn start
+CAMHW:K:camId:0, notify_isp_stream_status on
+RTDeviceV4L2     12:16:05-486 {ispStreamOn       :511} do ispStreamOn done
+MpiAdapterEncode 12:16:05-487 {ma_encode_create  :1743} ringbuf buf_size 131072
+MpiAdapterEncode 12:16:05-489 {ma_encode_create  :1782} mem_fd = 52
+cmpi             12:16:05-491 {vi_venc_thread    :176} Connected to STM32!
+MpiAdapterEncode 12:16:05-552 {ma_encode_get_pack:2079} map ptr: 0xa505c000, fd 54
